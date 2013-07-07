@@ -41,7 +41,7 @@
                     <ul class="nav">
                         <li><?php echo HTML::link('/','Inicio');?></li>
                     </ul>
-                    {{ Form::open(array('url'=>'login','class'=>'navbar-form pull-right')) }}
+                    {{ Form::open(array('url'=>'valido','class'=>'navbar-form pull-right')) }}
                     {{ Form::text('user',null,array('class'=>'span2','placeholder'=>'Usuario')) }}
                     {{ Form::password('pass',array('class'=>'span2','placeholder'=>'Contraseña')) }}
                     {{ Form::submit('Ingresar',array('class'=>'btn btn-info')) }}
