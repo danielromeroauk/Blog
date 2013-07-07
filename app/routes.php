@@ -13,3 +13,4 @@
 Route::get('/','PageController@index' );
 Route::get('login','LoginController@index');
 Route::post('valido','LoginController@valido');
+Route::get('logout','LoginController@logout');
