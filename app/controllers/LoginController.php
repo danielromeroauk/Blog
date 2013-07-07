@@ -2,7 +2,7 @@
 
 class LoginController extends BaseController
 {
-	public $restful = true;
+	// public $restful = true;
 
 	public function index()
 	{
@@ -25,5 +25,11 @@ class LoginController extends BaseController
 		}else{
 			echo "Usuario invalido";
 		}
+	}
+	public function logout()
+	{
+		Auth::logout();
+
+		return Redirect::to('');
 	}
 }
